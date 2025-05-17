@@ -1,3 +1,4 @@
+//xNeeyonch solution to palindrome LeetCode #9
 class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0 ){
@@ -9,6 +10,7 @@ class Solution {
         int xHolder = x;
         
         while ( xHolder > 0) {
+
             int nextNum = xHolder % 10;
             
             reversed *= 10;
