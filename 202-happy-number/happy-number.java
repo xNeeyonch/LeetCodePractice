@@ -11,7 +11,7 @@ class Solution {
         */
         
         //first create the list
-        Set<Integer> listOfSum = new HashSet<>();
+        List<Integer> listOfSum = new ArrayList<>();
         
         //create a while infinite while loop so that it 
         //returns either true or false
