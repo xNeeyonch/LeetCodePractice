@@ -40,15 +40,6 @@ class Solution {
             }
         }
         return leftPointer;
-        /*
-        THOUGHTS
         
-        at first I was confused on how I was supposed to portray a index greater than the 
-        array length, but I realized that since I am using pointers, I don't need the actual
-        index to be in the array. So if the target is greater than all the values in the array,
-        the logic will check the value of the last index and move the left pointer one more over
-        and since it is now greater than the right pointer it stops the while loop and now we 
-        just return the left pointer.
-         */
     }
 }
