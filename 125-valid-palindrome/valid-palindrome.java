@@ -4,8 +4,10 @@ class Solution {
             return true;
         }
 
+        s = s.toLowerCase();
+
         int leftPointer = 0;
-        int rightPointer = s.length()-1;
+        int rightPointer = s.length() - 1;
 
         while (leftPointer <= rightPointer){
             char start = s.charAt(leftPointer);
@@ -16,14 +18,14 @@ class Solution {
             } else if (!Character.isLetterOrDigit(end)) {
                 rightPointer--;
             } else {
-                if (Character.toLowerCase(start) != Character.toLowerCase(end)){
+                if (start != end){
                     return false;
                 }
                 leftPointer++;
                 rightPointer--;
             }
-
         }
         return true;
     }
+    
 }
